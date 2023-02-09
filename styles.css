@@ -1,0 +1,119 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(233, 47%, 7%);
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* overflow: hidden;
+apply to panel for giving border radius */
+
+/* font-family: 'Inter',
+sans-serif;
+font-family: 'Lexend Deca',
+sans-serif; */
+
+.panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 900px;
+    border-radius: 25px;
+}
+
+.left-panel {
+    background-color: hsl(244, 38%, 16%);
+    padding: 50px;
+    border-radius: 10px 0 0 10px;
+    width: 50%;
+}
+
+.heading {
+    width: 270px;
+    font-size: 25px;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+.content {
+    color: rgba(255, 255, 255, 0.685);
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    margin-top: 30px;
+    line-height: 1.6;
+    margin-bottom: 60px;
+    width: 320px;
+}
+
+.right-panel img {
+    width: 100%;
+    border-radius: 0 10px 10px 0;
+    height: 100%;
+}
+
+.right-panel {
+    position: relative;
+}
+
+.right-panel::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: hsl(277, 64%, 61%);
+    opacity: 0.5;
+    border-radius: 0 10px 10px 0;
+}
+
+.right-panel {
+    max-width: 50%;
+}
+
+/* .attribute {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Inter',
+        sans-serif;
+} */
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+}
+
+.boldd {
+    font-size: 17px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.884);
+    margin-bottom: 8px;
+}
+
+.normy {
+    font-size: 0.6rem;
+    color: rgba(255, 255, 255, 0.63);
+    letter-spacing: 1px;
+}
